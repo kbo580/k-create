@@ -25,6 +25,11 @@ img {
 /* -------------------------------------------- */
 /* 共通部分 */
 /* -------------------------------------------- */
+header, main, section, footer, div, ul, li, h1, h2, h3 {
+  background-color: rgba(0, 200, 100, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .inner {
   margin: 0 auto;
   max-width: 1200px;
@@ -301,7 +306,6 @@ section {
 
 .bread_inner .bread {
   position: absolute;
-  width: 100%;
   top: 8px;
   font-size: calc(0.75rem + ((1vw - 3.75px) * 0.221));
 }
