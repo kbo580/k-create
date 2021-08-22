@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.scss">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+  <title>K-CREATE</title>
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'hco3lug',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header class="other_header">
+    <div class="inner">
+      <div class="header_logo">
+        <a href="index.html">
+          <img src="images/k-create_logo.png"   alt="K-CREATEのヘッダーロゴ">
+        </a>
+      </div>
+
+      <!-- header_navここから -->
+      <nav class="header_nav" id="header-nav">
+        <ul class="nav_title_wrapper">
+          <li class="nav_wrapper">
+            <a href="service.html">Service</a>
+            <ul class="sub_menu">
+              <li><a href="https://kbyt-programming.com/">Webサイト作成</a></li>
+              <li><a href="#">サイトリニューアル</a></li>
+              <li><a href="#">バナー・アイコンデザイン</a></li>
+              <li><a href="#">写真撮影・加工・編集</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav_wrapper">
+            <a href="works.html">Works</a>
+            <ul class="sub_menu">
+              <li><a href="#">Webサイト製作実績</a></li>
+              <li><a href="#">バナー・アイコン作例</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="blog.html">Blog</a>
+            <ul class="sub_menu">
+              <li><a href="#">最新記事</a></li>
+              <li><a href="#">カテゴリー</a></li>
+              <li><a href="#">月間アーカイブ</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="plan.html">Plan</a>
+            <ul class="sub_menu">
+              <li><a href="#">お選びいただけるプラン</a></li>
+              <li><a href="#">プランの違い</a></li>
+              <li><a href="#">追加オプション</a></li>
+              <li><a href="#">保守サービス</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="about.html">About</a>
+            <ul class="sub_menu">
+              <li><a href="#">経営理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- header_navここまで -->
+
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <nav class="modal_nav_menu" id="modal_nav_menu">
+        <ul class="modal_nav">
+
+          <li class="modal_nav_wrapper">
+            <p class="modal_nav_title">Service<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="service.html">Webサイト作成</a></li>
+              <li><a href="#">サイトリニューアル</a></li>
+              <li><a href="#">バナー・アイコンデザイン</a></li>
+              <li><a href="#">写真撮影・加工・編集</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Works<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">Webサイト製作実績</a></li>
+              <li><a href="#">バナー・アイコン作例</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Blog<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">最新記事</a></li>
+              <li><a href="#">カテゴリー</a></li>
+              <li><a href="#">月間アーカイブ</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Plan<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">お選びいただけるプラン</a></li>
+              <li><a href="#">プランの違い</a></li>
+              <li><a href="#">追加オプション</a></li>
+              <li><a href="#">保守サービス</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">About<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">経営理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+        </ul>
+        <!-- modal_navここまで -->
+      </nav>
+
+    </div>
+    <!-- /inner -->
+    
+    <div class="sp_form_btn">
+      <a href="contact.html"><i class="far fa-envelope"></i></a>
+    </div>
+
+    <div class="form_btn">
+      <a href="contact.html"><i class="far fa-envelope"></i>お問い合わせ</a>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="about_mv mv">
+      <div class="inner">
+        <h1>About<span>わたしたちについて</span></h1>
+      </div>
+    </div>
+    <!-- mvここまで -->
+
+    <div class="inner bread_inner">
+      <div class="bread">
+        ホーム ＞ About
+      </div>
+    </div>
+
+    <section class="about_concept">
+      <div class="inner">
+        <div class="section_title_wrapper">
+          <h2 class="section_title">経営理念</h2>
+        </div>
+        <!-- section_title_wrapperここまで -->
+        
+        <div class="about_concept_image_wrapper">
+          <div class="image"></div>
+
+          <div class="about_concept_text_wrapper blue_box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /inner -->
+
+    </section>
+    <!-- about_conceptここまで -->
+
+    <section class="about_company">
+      <div class="inner">
+
+        <div class="section_title_wrapper">
+          <h2 class="section_title">会社概要</h2>
+        </div>
+        <!-- section_title_wrapperここまで -->
+  
+        <div class="about_company_image_wrapper">
+          <div class="image"></div>
+
+          <div class="about_company_history_wrapper blue_box">
+            <table class="company_history">
+              <tr>
+                <td>社名</td><td>K-CREATE</td>
+              </tr>
+              <tr>
+                <td>所在地</td><td>〒123-4567 愛知県名古屋市◯◯区〇〇</td>
+              </tr>
+              <tr>
+                <td>設立</td><td>2021年8月</td>
+              </tr>
+              <tr>
+                <td>資本金</td><td>600万円</td>
+              </tr>
+              <tr>
+                <td>代表取締役</td><td>山田　太郎</td>
+              </tr>
+              <tr>
+                <td>従業員数</td><td>15名</td>
+              </tr>
+            </table>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- /inner -->
+
+    </section>
+    <!-- about_companyここまで -->
+
+    <section class="about_access">
+      <div class="section_title_wrapper">
+        <h2 class="section_title">アクセス</h2>
+      </div>
+      <!-- section_title_wrapperここまで -->
+      
+      <!-- google-mapここから -->
+      <div class=“google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.426742199308!2d136.87934821567296!3d35.17091498031657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1629285315081!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- google-mapここまで -->
+    </section>
+    <!-- about_accessここまで -->
+
+    <section class="contact">
+      <div class="inner">
+
+        <div class="section_title_wrapper">
+          <h2 class="section_title">Contact</h2>
+          <p>お問い合わせ</p>
+        </div>
+        <!-- section_title_wrapperここまで -->
+
+        <div class="contact_wrapper">
+          <p class="comment">無料お見積もりやご相談など<br>何でもお気軽にご連絡お待ちしています！</p>
+  
+          <div class="contact_btn_wrapper">
+            <div class="contact_btn_contact">
+              <p>フォームからのお問い合わせはコチラ</p>
+              <div class="contact_btn"><a href="#">お問い合わせ</a></div>
+            </div>
+    
+            <div class="contact_btn_contact">
+              <p><i class="fas fa-phone-alt"></i>お電話でのお問い合わせはコチラ</p>
+              <div class="contact_btn"><a href="tel:052-123-4567"><div class="phone_wrapper">052-123-4567<span class="open">平日 9:00 ~ 18:00</span></div></a></div>
+            </div>
+
+          </div>
+          <!-- form_btn_wrapperここまで -->
+
+        </div>
+        <!-- contact_wrapperここまで -->
+      </div>
+      <!-- /inner -->
+
+    </section>
+    <!-- contactここまで -->
+
+    <div class="sns_wrapper">
+      <div class="sns_card youtube">
+        <a href="#">
+          <p><i class="fab fa-youtube"></i></p>
+          <p>YOU TUBEチャンネル<br>はじめました</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+      <div class="sns_card twitter">
+        <a href="#">
+          <p><i class="fab fa-twitter"></i></p>
+          <p>Twitter アカウント<br>気まぐれでつぶやいています</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+      <div class="sns_card facebook">
+        <a href="#">
+          <p><i class="fab fa-facebook-square"></i></p>
+          <p>face book アカウント<br>更新頻度はあまり高くありません</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+    </div>
+    <!-- sns_wrapperここまで -->
+    
+
+  </main>
+
+  <footer>
+    <div class="inner">
+
+      <div class="footer_wrapper">
+
+        <div class="footer_info_wrapper">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="images/k-create_logo.png" alt="K-CREATEのヘッダーロゴ">
+          </a>
+          </div>
+  
+          <ul class="footer_address">
+            <li>K-CREATE</li>
+            <li>〒123-4567 愛知県名古屋市◯◯区〇〇</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:052-123-4567">052-123-4567</a></li>
+            <li>平日 9:00 ~ 18:00</li>
+          </ul>
+          <!-- footer_addressここまで -->
+        </div>
+        <!-- footer_info_wrapperここまで -->
+
+        <nav class="footer_nav">
+          <ul class="nav_title_wrapper">
+            <li class="nav_wrapper"><a href="service.html" class="nav_title">Service</a>
+              <ul>
+                <li><a href="#">Webサイト作成</a></li>
+                <li><a href="#">サイトリニューアル</a></li>
+                <li><a href="#">バナー・アイコンデザイン</a></li>
+                <li><a href="#">写真撮影・加工・編集</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="works.html" class="nav_title">Works</a>
+              <ul>
+                <li><a href="#">Webサイト製作実績</a></li>
+                <li><a href="#">バナー・アイコン作例</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="blog.html" class="nav_title">Blog</a>
+              <ul>
+                <li><a href="#">最新記事</a></li>
+                <li><a href="#">カテゴリー</a></li>
+                <li><a href="#">月間アーカイブ</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="plan.html" class="nav_title">Plan</a>
+              <ul>
+                <li><a href="#">お選びいただけるプラン</a></li>
+                <li><a href="#">プランの違い</a></li>
+                <li><a href="#">追加オプション</a></li>
+                <li><a href="#">保守サービス</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="about.html" class="nav_title">About</a>
+              <ul>
+                <li><a href="#">経営理念</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">アクセス</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- footer_nav_titleここまで -->
+        </nav>
+        <!-- footer_navここまで -->
+      </div>
+      <!-- footer_wrapperここまで -->
+
+  
+      <p class="copy">&copy 2021 K-CREATE</p>
+    </div>
+    <!-- /inner -->
+
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+

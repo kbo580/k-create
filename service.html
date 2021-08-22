@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.scss">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+  <title>K-CREATE</title>
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'hco3lug',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header class="other_header">
+    <div class="inner">
+      <div class="header_logo">
+        <a href="index.html">
+          <img src="images/k-create_logo.png"   alt="K-CREATEのヘッダーロゴ">
+        </a>
+      </div>
+
+      <!-- header_navここから -->
+      <nav class="header_nav" id="header-nav">
+        <ul class="nav_title_wrapper">
+          <li class="nav_wrapper">
+            <a href="service.html">Service</a>
+            <ul class="sub_menu">
+              <li><a href="https://kbyt-programming.com/">Webサイト作成</a></li>
+              <li><a href="#">サイトリニューアル</a></li>
+              <li><a href="#">バナー・アイコンデザイン</a></li>
+              <li><a href="#">写真撮影・加工・編集</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav_wrapper">
+            <a href="works.html">Works</a>
+            <ul class="sub_menu">
+              <li><a href="#">Webサイト製作実績</a></li>
+              <li><a href="#">バナー・アイコン作例</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="blog.html">Blog</a>
+            <ul class="sub_menu">
+              <li><a href="#">最新記事</a></li>
+              <li><a href="#">カテゴリー</a></li>
+              <li><a href="#">月間アーカイブ</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="plan.html">Plan</a>
+            <ul class="sub_menu">
+              <li><a href="#">お選びいただけるプラン</a></li>
+              <li><a href="#">プランの違い</a></li>
+              <li><a href="#">追加オプション</a></li>
+              <li><a href="#">保守サービス</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="about.html">About</a>
+            <ul class="sub_menu">
+              <li><a href="#">経営理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- header_navここまで -->
+
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <nav class="modal_nav_menu" id="modal_nav_menu">
+        <ul class="modal_nav">
+
+          <li class="modal_nav_wrapper">
+            <p class="modal_nav_title">Service<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="service.html">Webサイト作成</a></li>
+              <li><a href="#">サイトリニューアル</a></li>
+              <li><a href="#">バナー・アイコンデザイン</a></li>
+              <li><a href="#">写真撮影・加工・編集</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Works<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">Webサイト製作実績</a></li>
+              <li><a href="#">バナー・アイコン作例</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Blog<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">最新記事</a></li>
+              <li><a href="#">カテゴリー</a></li>
+              <li><a href="#">月間アーカイブ</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Plan<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">お選びいただけるプラン</a></li>
+              <li><a href="#">プランの違い</a></li>
+              <li><a href="#">追加オプション</a></li>
+              <li><a href="#">保守サービス</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">About<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">経営理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+        </ul>
+        <!-- modal_navここまで -->
+      </nav>
+
+    </div>
+    <!-- /inner -->
+    
+    <div class="sp_form_btn">
+      <a href="contact.html"><i class="far fa-envelope"></i></a>
+    </div>
+
+    <div class="form_btn">
+      <a href="contact.html"><i class="far fa-envelope"></i>お問い合わせ</a>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="service_mv mv">
+      <div class="inner">
+        <h1>Service<span>わたしたちのサービス</span></h1>
+      </div>
+    </div>
+    <!-- mvここまで -->
+
+    <div class="inner bread_inner">
+      <div class="bread">
+        ホーム ＞ Service
+      </div>
+    </div>
+
+    <section class="web_design_wrapper">
+      <div class="inner">
+
+        <!-- serviceのタイトル -->
+        <div class="service_title">
+
+          <div class="service_title_wrapper">
+
+            <div class="service_title_image">
+              <img src="images/service_1.png" alt="" loading="lazy">
+            </div>
+            
+            <div class="service_title_text">
+              <!-- <h2>1.Webサイト作成</h2> -->
+              <div class="letter">WEB DESIGN</div>
+
+              <!-- tbとpcのみ表示 -->
+              <ul class="pc_explain">
+                <li>コーポレートサイト、イベントサイトや個人店のサイトなど幅広く知識をもったスタッフが適切なサイト作成をご提案させていただきます。</li>
+                <li>また作成するページ数によって工程、製作期間が異なります。</li>
+              </ul>
+              <!-- /tbとpcのみ表示 -->
+
+            </div>
+
+            <!-- service_title_textここまで -->
+
+          </div>
+          <!-- service_title_wrapperここまで -->
+
+          <!-- spのみ表示 -->
+          <ul class="sp_explain">
+            <li>コーポレートサイト、イベントサイトや個人店のサイトなど幅広く知識をもったスタッフが適切なサイト作成をご提案させていただきます。</li>
+            <li>また作成するページ数によって工程、製作期間が異なります。</li>
+          </ul>
+          <!-- /spのみ表示 -->
+
+        </div>
+        <!-- serviceのタイトルここまで -->
+
+        <!-- works_itemここから -->
+        <div class="works_item">
+          <ul class="works_image_wrapper web_design">
+          
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/works_1.jpg" alt="webサイトのサムネイル" width="260" height="150" loading="lazy">
+
+                <div class="mask">
+                  <div class="caption">It's fresh ddddd!</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/top-contact.jpg" alt="webサイトのサムネイル" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/works_1.jpg" alt="webサイトのサムネイル" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/works_1.jpg" alt="webサイトのサムネイル" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+          </ul>
+          <!-- works_image_wrapperここまで -->
+        </div>
+        <!-- works_itemここまで -->
+
+        <!-- service_btn_wrapper -->
+        <div class="service_btn_wrapper">
+          
+          <div class="works_btn btn">
+            <a href="#">一覧を見る<i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="works_btn btn">
+            <a href="#">プランを見る<i class="fas fa-angle-right"></i></a>
+          </div>
+
+        </div>
+        <!-- /service_btn_wrapper -->
+
+      </div>
+      <!-- /inner -->
+
+    </section>
+    <!-- web_designここまで -->
+
+    <section class="renewal_wrapper">
+      <div class="inner">
+        <!-- 各serviceのタイトル -->
+        <div class="service_title">
+
+          <div class="service_title_wrapper">
+
+            <div class="service_title_image">
+              <img src="images/service_2.png" alt="" loading="lazy">
+            </div>
+            
+            <div class="service_title_text">
+              <!-- <h2>1.Webサイト作成</h2> -->
+              <div class="letter">RENEWAL</div>
+
+              <!-- tbとpcのみ表示 -->
+              <ul class="pc_explain">
+                <li>今お持ちのWebサイトをリニューアルし様々な動きをつけたり、SNSサービスの埋め込みなども行うことができます。</li>
+                <li>もちろん今では当たり前となったスマートフォンなどの携帯端末でも見られるように(レスポンシブ対応)することも可能です。</li>
+                <li>またご要望があればお客様のスケジュールに合わせたサイトの保守点検も承ります。(レスポンシブ対応)することも可能です。</li>
+              </ul>
+              <!-- /tbとpcのみ表示 -->
+
+            </div>
+
+            <!-- service_title_textここまで -->
+
+          </div>
+          <!-- service_title_wrapperここまで -->
+
+          <!-- spのみ表示 -->
+          <ul class="sp_explain">
+            <li>今お持ちのWebサイトをリニューアルし様々な動きをつけたり、SNSサービスの埋め込みなども行うことができます。</li>
+            <li>もちろん今では当たり前となったスマートフォンなどの携帯端末でも見られるように(レスポンシブ対応)することも可能です。</li>
+            <li>またご要望があればお客様のスケジュールに合わせたサイトの保守点検も承ります。(レスポンシブ対応)することも可能です。</li>
+          </ul>
+          <!-- /spのみ表示 -->
+
+        </div>
+        <!-- 各serviceのタイトルここまで -->
+
+        <h2>サイトリニューアル例</h2>
+
+        <!-- renewal_exampleここから -->
+        <div class="renewal_example">
+          <ul>
+            <li class="renewal_label">before</li>
+            <li class="renewal_image_wrapper"><a href="#" class="item_image" style="background:url(images/renewal.jpg) no-repeat; background-size:cover; background-position:center;"></a></li>
+          </ul>
+
+          <ul>
+            <li class="renewal_label">after</li>
+            <li class="renewal_image_wrapper"><a href="#" class="item_image" style="background:url(images/works_1.jpg) no-repeat; background-size:cover; background-position:center;"></a></li>
+          </ul>
+        </div>
+        <!-- renewal_exampleここまで -->
+
+        <div class="works_btn btn">
+          <a href="#">プランを見る<i class="fas fa-angle-right"></i></a>
+        </div>
+        <!-- btn -->
+
+      </div>
+      <!-- /inner -->
+    </section>
+
+    <section class="icon_wrapper">
+      <div class="inner">
+        <!-- 各serviceのタイトル -->
+        <div class="service_title">
+
+          <div class="service_title_wrapper">
+
+            <div class="service_title_image">
+              <img src="images/service_3.png" alt="" loading="lazy">
+            </div>
+            
+            <div class="service_title_text">
+              <!-- <h2>1.Webサイト作成</h2> -->
+              <div class="letter">ICON&BANNER</div>
+
+              <!-- tbとpcのみ表示 -->
+              <ul class="pc_explain">
+                <li>webページや名刺、フライヤーで使用する用のロゴやアイコン、バナーなどの製作も承っております。</li>
+                <li>またWebサイトで使用するロゴやアイコン、バナーは様々なサイズでの納品が可能です。</li>
+              </ul>
+              <!-- /tbとpcのみ表示 -->
+
+            </div>
+
+            <!-- service_title_textここまで -->
+
+          </div>
+          <!-- service_title_wrapperここまで -->
+
+          <!-- spのみ表示 -->
+          <ul class="sp_explain">
+            <li>webページや名刺、フライヤーで使用する用のロゴやアイコン、バナーなどの製作も承っております。</li>
+            <li>またWebサイトで使用するロゴやアイコン、バナーは様々なサイズでの納品が可能です。</li>
+          </ul>
+          <!-- /spのみ表示 -->
+
+        </div>
+        <!-- 各serviceのタイトルここまで -->
+
+        <div class="works_item">
+  
+          <h3>バナー作例</h3>
+          <ul class="works_image_wrapper banner">
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/bunner-dumy.png" alt="バナーのサムネイル" width="350" height="130" loading="lazy">
+
+                <div class="mask">
+                  <div class="caption">It's fresh ddddd!</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/top-fv.jpg" alt="バナーのサムネイル" width="350" height="130" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/bunner-dumy.png" alt="バナーのサムネイル" width="350" height="130" loading="lazy">
+              </a>
+            </li>
+            
+          </ul>
+          <!-- works_image_wrapperここまで -->
+        </div>
+        <!-- works_itemここまで -->
+
+        <div class="works_item icon_works_item">
+  
+          <h3>アイコン・ロゴ作例</h3>
+
+          <ul class="works_image_wrapper icon">
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/single-image.jpg" alt="アイコンサムネイル" width="200" height="130" loading="lazy">
+
+                <div class="mask">
+                  <div class="caption">It's fresh ddddd!</div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/plan-fv.jpg" alt="アイコンサムネイル" width="200" height="130" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/works_1.jpg" alt="アイコンサムネイル" width="200" height="130" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/icon-damy.png" alt="アイコンサムネイル" width="200" height="130" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/icon-damy.png" alt="アイコンサムネイル" width="200" height="130" loading="lazy">
+              </a>
+            </li>
+
+          </ul>
+          <!-- works_image_wrapperここまで -->
+
+        </div>
+        <!-- works_itemここまで -->
+
+        <!-- service_btn_wrapper -->
+        <div class="service_btn_wrapper">
+          
+          <div class="works_btn btn">
+            <a href="#">一覧を見る<i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="works_btn btn">
+            <a href="#">プランを見る<i class="fas fa-angle-right"></i></a>
+          </div>
+
+        </div>
+        <!-- /service_btn_wrapper -->
+
+      </div>
+      <!-- /inner -->
+    </section>
+
+    <section class="photograph_wrapper">
+      <div class="inner">
+        <!-- 各serviceのタイトル -->
+        <div class="service_title">
+
+          <div class="service_title_wrapper">
+
+            <div class="service_title_image">
+              <img src="images/service_4.png" alt="" loading="lazy">
+            </div>
+            
+            <div class="service_title_text">
+              <!-- <h2>1.Webサイト作成</h2> -->
+              <div class="letter">PHOTOGRAPH</div>
+
+              <!-- tbとpcのみ表示 -->
+              <ul class="pc_explain">
+                <li>Webサイトで使用する写真素材を専属スタッフが撮影を行いそのまま修正、加工も合わせてさせていただきます。</li>
+                <li>また作もちろん撮影、加工のみのご依頼も承っております。成するページ数によって工程、製作期間が異なります。</li>
+              </ul>
+              <!-- /tbとpcのみ表示 -->
+
+            </div>
+
+            <!-- service_title_textここまで -->
+
+          </div>
+          <!-- service_title_wrapperここまで -->
+
+          <!-- spのみ表示 -->
+          <ul class="sp_explain">
+            <li>Webサイトで使用する写真素材を専属スタッフが撮影を行いそのまま修正、加工も合わせてさせていただきます。</li>
+            <li>また作もちろん撮影、加工のみのご依頼も承っております。成するページ数によって工程、製作期間が異なります。</li>
+          </ul>
+          <!-- /spのみ表示 -->
+
+        </div>
+        <!-- 各serviceのタイトルここまで -->
+
+        <div class="works_item icon_works_item">
+
+          <ul class="works_image_wrapper web_design">
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/photo_1.jpg" alt="写真撮影の例１" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/photo_2.jpg" alt="写真撮影の例２" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/photo_3.jpg" alt="写真撮影の例３" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="image_wrap">
+                <img src="images/photo_4.jpg" alt="写真撮影の例４" width="260" height="150" loading="lazy">
+              </a>
+            </li>
+
+          </ul>
+          <!-- works_image_wrapperここまで -->
+
+        </div>
+        <!-- works_itemここまで -->
+
+        <div class="works_btn btn">
+          <a href="#">プランを見る<i class="fas fa-angle-right"></i></a>
+        </div>
+        <!-- btn -->
+
+      </div>
+      <!-- /inner -->
+    </section>
+
+    <section class="contact">
+      <div class="inner">
+
+        <div class="section_title_wrapper">
+          <h2 class="section_title">Contact</h2>
+          <p>お問い合わせ</p>
+        </div>
+        <!-- section_title_wrapperここまで -->
+
+        <div class="contact_wrapper">
+          <p class="comment">無料お見積もりやご相談など<br>何でもお気軽にご連絡お待ちしています！</p>
+  
+          <div class="contact_btn_wrapper">
+            <div class="contact_btn_contact">
+              <p>フォームからのお問い合わせはコチラ</p>
+              <div class="contact_btn"><a href="#">お問い合わせ</a></div>
+            </div>
+    
+            <div class="contact_btn_contact">
+              <p><i class="fas fa-phone-alt"></i>お電話でのお問い合わせはコチラ</p>
+              <div class="contact_btn"><a href="tel:052-123-4567"><div class="phone_wrapper">052-123-4567<span class="open">平日 9:00 ~ 18:00</span></div></a></div>
+            </div>
+
+          </div>
+          <!-- form_btn_wrapperここまで -->
+
+        </div>
+        <!-- contact_wrapperここまで -->
+      </div>
+      <!-- /inner -->
+
+    </section>
+    <!-- contactここまで -->
+
+    <div class="sns_wrapper">
+      <div class="sns_card youtube">
+        <a href="#">
+          <p><i class="fab fa-youtube"></i></p>
+          <p>YOU TUBEチャンネル<br>はじめました</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+      <div class="sns_card twitter">
+        <a href="#">
+          <p><i class="fab fa-twitter"></i></p>
+          <p>Twitter アカウント<br>気まぐれでつぶやいています</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+      <div class="sns_card facebook">
+        <a href="#">
+          <p><i class="fab fa-facebook-square"></i></p>
+          <p>face book アカウント<br>更新頻度はあまり高くありません</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+    </div>
+    <!-- sns_wrapperここまで -->
+    
+
+  </main>
+
+  <footer>
+    <div class="inner">
+
+      <div class="footer_wrapper">
+
+        <div class="footer_info_wrapper">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="images/k-create_logo.png" alt="K-CREATEのヘッダーロゴ">
+          </a>
+          </div>
+  
+          <ul class="footer_address">
+            <li>K-CREATE</li>
+            <li>〒123-4567 愛知県名古屋市◯◯区〇〇</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:052-123-4567">052-123-4567</a></li>
+            <li>平日 9:00 ~ 18:00</li>
+          </ul>
+          <!-- footer_addressここまで -->
+        </div>
+        <!-- footer_info_wrapperここまで -->
+
+        <nav class="footer_nav">
+          <ul class="nav_title_wrapper">
+            <li class="nav_wrapper"><a href="service.html" class="nav_title">Service</a>
+              <ul>
+                <li><a href="#">Webサイト作成</a></li>
+                <li><a href="#">サイトリニューアル</a></li>
+                <li><a href="#">バナー・アイコンデザイン</a></li>
+                <li><a href="#">写真撮影・加工・編集</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="works.html" class="nav_title">Works</a>
+              <ul>
+                <li><a href="#">Webサイト製作実績</a></li>
+                <li><a href="#">バナー・アイコン作例</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="blog.html" class="nav_title">Blog</a>
+              <ul>
+                <li><a href="#">最新記事</a></li>
+                <li><a href="#">カテゴリー</a></li>
+                <li><a href="#">月間アーカイブ</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="plan.html" class="nav_title">Plan</a>
+              <ul>
+                <li><a href="#">お選びいただけるプラン</a></li>
+                <li><a href="#">プランの違い</a></li>
+                <li><a href="#">追加オプション</a></li>
+                <li><a href="#">保守サービス</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="about.html" class="nav_title">About</a>
+              <ul>
+                <li><a href="#">経営理念</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">アクセス</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- footer_nav_titleここまで -->
+        </nav>
+        <!-- footer_navここまで -->
+      </div>
+      <!-- footer_wrapperここまで -->
+
+  
+      <p class="copy">&copy 2021 K-CREATE</p>
+    </div>
+    <!-- /inner -->
+
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+

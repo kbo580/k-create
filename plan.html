@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.scss">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+  <title>K-CREATE</title>
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'hco3lug',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header class="other_header">
+    <div class="inner">
+      <div class="header_logo">
+        <a href="index.html">
+          <img src="images/k-create_logo.png"   alt="K-CREATEのヘッダーロゴ">
+        </a>
+      </div>
+
+      <!-- header_navここから -->
+      <nav class="header_nav" id="header-nav">
+        <ul class="nav_title_wrapper">
+          <li class="nav_wrapper">
+            <a href="service.html">Service</a>
+            <ul class="sub_menu">
+              <li><a href="https://kbyt-programming.com/">Webサイト作成</a></li>
+              <li><a href="#">サイトリニューアル</a></li>
+              <li><a href="#">バナー・アイコンデザイン</a></li>
+              <li><a href="#">写真撮影・加工・編集</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav_wrapper">
+            <a href="works.html">Works</a>
+            <ul class="sub_menu">
+              <li><a href="#">Webサイト製作実績</a></li>
+              <li><a href="#">バナー・アイコン作例</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="blog.html">Blog</a>
+            <ul class="sub_menu">
+              <li><a href="#">最新記事</a></li>
+              <li><a href="#">カテゴリー</a></li>
+              <li><a href="#">月間アーカイブ</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="plan.html">Plan</a>
+            <ul class="sub_menu">
+              <li><a href="#">お選びいただけるプラン</a></li>
+              <li><a href="#">プランの違い</a></li>
+              <li><a href="#">追加オプション</a></li>
+              <li><a href="#">保守サービス</a></li>
+            </ul>
+          </li>
+
+          <li class="nav_wrapper">
+            <a href="about.html">About</a>
+            <ul class="sub_menu">
+              <li><a href="#">経営理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- header_navここまで -->
+
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <nav class="modal_nav_menu" id="modal_nav_menu">
+        <ul class="modal_nav">
+
+          <li class="modal_nav_wrapper">
+            <p class="modal_nav_title">Service<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="service.html">Webサイト作成</a></li>
+              <li><a href="#">サイトリニューアル</a></li>
+              <li><a href="#">バナー・アイコンデザイン</a></li>
+              <li><a href="#">写真撮影・加工・編集</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Works<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">Webサイト製作実績</a></li>
+              <li><a href="#">バナー・アイコン作例</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Blog<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">最新記事</a></li>
+              <li><a href="#">カテゴリー</a></li>
+              <li><a href="#">月間アーカイブ</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">Plan<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">お選びいただけるプラン</a></li>
+              <li><a href="#">プランの違い</a></li>
+              <li><a href="#">追加オプション</a></li>
+              <li><a href="#">保守サービス</a></li>
+            </ul>
+          </li>
+  
+          <li class="modal_nav_wrapper"><p class="modal_nav_title">About<span>+</span></p>
+            <ul class="modal_sub_menu">
+              <li><a href="#">経営理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+        </ul>
+        <!-- modal_navここまで -->
+      </nav>
+
+    </div>
+    <!-- /inner -->
+    
+    <div class="sp_form_btn">
+      <a href="contact.html"><i class="far fa-envelope"></i></a>
+    </div>
+
+    <div class="form_btn">
+      <a href="contact.html"><i class="far fa-envelope"></i>お問い合わせ</a>
+    </div>
+
+  </header>
+
+  <main class="plan">
+    <div class="plan_mv mv">
+      <div class="inner">
+        <h1>Plan<span>プラン</span></h1>
+      </div>
+    </div>
+    <!-- mvここまで -->
+
+    <div class="inner bread_inner">
+      <div class="bread">
+        ホーム ＞ Plan
+      </div>
+    </div>
+
+    <section class="plan_top">
+      <div class="inner">
+        <h2>Webサイト作成をご希望のお客様にはニーズに合わせて簡単にお選びいただける<span>３</span>つのプランをご用意しております。</h2>
+      </div>
+    </section>
+    <!-- plan_topここまで -->
+
+    <section class="plan_choice">
+      <div class="inner">
+        <h2 class="plan_heading">お選びいただけるプラン</h2>
+
+        <div class="plan_item_wrapper">
+
+          <ul class="tab">
+            <li><a href="#lunch">スタート</a></li>
+            <li><a href="#drink">スタンダード</a></li>
+            <li><a href="#dinner">DX</a></li>
+          </ul>
+          
+          <div class="plan_item area"id="lunch">
+            <p>スタートプラン</p>
+            <ul>
+              <li>サイトリニューアルをしたい</li>
+              <li>お試しでWebサイトを用意したい</li>
+              <li>早急に用意したい</li>
+              <li>後々拡張予定がある</li>
+            </ul>
+          </div>
+          <!-- plan_itemここまで -->
+  
+          <div class="plan_item area" id="drink">
+            <p>スタンダードプラン</p>
+            <ul>
+              <li>ご自身で管理更新のできるWebサイトを用意したい</li>
+              <li>SNSと連携しアクセスを増やしたい</li>
+            </ul>
+          </div>
+          <!-- plan_itemここまで -->
+  
+          <div class="plan_item area" id="dinner">
+            <p>DXプラン</p>
+            <ul>
+              <li>全てお任せしたい</li>
+              <li>写真や文章などの素材も用意して欲しい</li>
+              <li>だけどSEO対策はしっかりやって欲しい</li>
+            </ul>
+          </div>
+          <!-- plan_itemここまで -->
+
+        </div>
+        <!-- plan_item_wrapperここまで -->
+
+        </div>
+    </section>
+
+    <section class="plan_difference">
+      <div class="inner">
+        <h2 class="plan_heading">プランの違い</h2>
+
+        <table class="plan_difference_table">
+          <tr>
+            <td></td><th>スタートプラン</th><th>スタンダードプラン</th><th>DXプラン</th>
+          </tr>
+
+          <tr>
+            <th>料金</th><td>200,000円~</td><td>300,000円~</td><td>400,000円~</td>
+          </tr>
+          <tr>
+            <th>製作期間</th><td>14~21日ほど</td><td>20~30日ほど</td><td>30~60日ほど</td>
+          </tr>
+          <tr>
+            <th>サイトデザイン(5ページまで)</th><td>◯</td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>スマートフォン対応</th><td>◯</td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>ドメイン取得</th><td>◯</td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>サーバー設定</th><td>◯</td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>お問い合わせページ</th><td>◯</td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>Word Press設置</th><td></td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>ブログ機能</th><td></td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>SNS連携、設定</th><td></td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>追加ページ(6~12ページ)</th><td></td><td>◯</td><td>◯</td>
+          </tr>
+          <tr>
+            <th>素材写真撮影、加工</th><td></td><td></td><td>◯</td>
+          </tr>
+          <tr>
+            <th>ロゴ作成</th><td></td><td></td><td>◯</td>
+          </tr>
+          <tr>
+            <th>SEO対策</th><td></td><td></td><td>◯</td>
+          </tr>
+          <tr>
+            <th>文章ライティング</th><td></td><td></td><td>◯</td>
+          </tr>
+          <tr>
+            <th>追加ページ(13~16ページ)</th><td></td><td></td><td>◯</td>
+          </tr>
+        </table>
+
+      </div>
+      <!-- /inner -->
+    </section>
+
+    <section class="plan_option">
+      <div class="inner">
+        <h2 class="plan_heading">追加オプション</h2>
+        <table class="plan_option_table">
+          <tr>
+            <td></td><th>お値段</th>
+          </tr>
+          <tr>
+            <th>追加ページ</th><td>8,000円/1ページあたり</td>
+          </tr>
+          <tr>
+            <th>ロゴデザイン</th><td>5,000円/3種類ほどご提案いたします</td>
+          </tr>
+          <tr>
+            <th>バナーデザイン</th><td>10,000円/ご希望に沿ったサイズ(5サイズまで)</td>
+          </tr>
+          <tr>
+            <th>写真撮影</th><td>12,000円 + 交通費/4h</td>
+          </tr>
+          <tr>
+            <th>写真加工</th><td>5,000円 / 1点あたり</td>
+          </tr>
+          <tr>
+            <th>アクセスマップの作成</th><td>8,000円 / 1点あたり</td>
+          </tr>
+          <tr>
+            <th>予約フォームの設置</th><td>15,000円 / 1点あたり</td>
+          </tr>
+          <tr>
+            <th>SNS連携、設定</th><td>5,000円 / 1点あたり</td>
+          </tr>
+          <tr>
+            <th>文章ライティング</th><td>要相談</td>
+          </tr>
+          <tr>
+            <th>機能の追加</th><td>要相談</td>
+          </tr>
+        </table>
+
+        <ul>
+          <li>ここに示したものは一部です。</li>
+          <li>お客様のご要望があれば柔軟に検討することも可能です。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plan_mainte">
+      <div class="inner">
+        <h2 class="plan_heading">保守サービス</h2>
+
+        <div class="table_wrapper">
+          <p class="can_scroll">※横にスクロールできます。</p>
+          <table class="plan_mainte_table">
+            <tr>
+              <td></td><th>内容</th><th>お値段/月</th>
+            </tr>
+            <tr>
+              <th>Webサイト運用代行</th><td>お客様に変わってWebサイトの更新、管理を代行します。</td><td>10,000円~(ページ数で異なります)</td>
+            </tr>
+            <tr>
+              <th>Word Press更新</th><td>Word Pressやプラグインの更新</td><td>5,000円~(件数で異なります)</td>
+            </tr>
+            <tr>
+              <th>SEOアドバイス</th><td>定期的な分析をし、適切なアドバイスをさせていただきます。</td><td>15,000円</td>
+            </tr>
+          </table>
+        </div>
+
+        <p>基本的には月毎のご契約となります。</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="inner">
+
+        <div class="section_title_wrapper">
+          <h2 class="section_title">Contact</h2>
+          <p>お問い合わせ</p>
+        </div>
+        <!-- section_title_wrapperここまで -->
+
+        <div class="contact_wrapper">
+          <p class="comment">無料お見積もりやご相談など<br>何でもお気軽にご連絡お待ちしています！</p>
+  
+          <div class="contact_btn_wrapper">
+            <div class="contact_btn_contact">
+              <p>フォームからのお問い合わせはコチラ</p>
+              <div class="contact_btn"><a href="#">お問い合わせ</a></div>
+            </div>
+    
+            <div class="contact_btn_contact">
+              <p><i class="fas fa-phone-alt"></i>お電話でのお問い合わせはコチラ</p>
+              <div class="contact_btn"><a href="tel:052-123-4567"><div class="phone_wrapper">052-123-4567<span class="open">平日 9:00 ~ 18:00</span></div></a></div>
+            </div>
+
+          </div>
+          <!-- form_btn_wrapperここまで -->
+
+        </div>
+        <!-- contact_wrapperここまで -->
+      </div>
+      <!-- /inner -->
+
+    </section>
+    <!-- contactここまで -->
+
+    <div class="sns_wrapper">
+      <div class="sns_card youtube">
+        <a href="#">
+          <p><i class="fab fa-youtube"></i></p>
+          <p>YOU TUBEチャンネル<br>はじめました</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+      <div class="sns_card twitter">
+        <a href="#">
+          <p><i class="fab fa-twitter"></i></p>
+          <p>Twitter アカウント<br>気まぐれでつぶやいています</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+      <div class="sns_card facebook">
+        <a href="#">
+          <p><i class="fab fa-facebook-square"></i></p>
+          <p>face book アカウント<br>更新頻度はあまり高くありません</p>
+        </a>
+      </div>
+      <!-- youtubeここまで -->
+
+    </div>
+    <!-- sns_wrapperここまで -->
+    
+
+  </main>
+
+  <footer>
+    <div class="inner">
+
+      <div class="footer_wrapper">
+
+        <div class="footer_info_wrapper">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="images/k-create_logo.png" alt="K-CREATEのヘッダーロゴ">
+          </a>
+          </div>
+  
+          <ul class="footer_address">
+            <li>K-CREATE</li>
+            <li>〒123-4567 愛知県名古屋市◯◯区〇〇</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:052-123-4567">052-123-4567</a></li>
+            <li>平日 9:00 ~ 18:00</li>
+          </ul>
+          <!-- footer_addressここまで -->
+        </div>
+        <!-- footer_info_wrapperここまで -->
+
+        <nav class="footer_nav">
+          <ul class="nav_title_wrapper">
+            <li class="nav_wrapper"><a href="service.html" class="nav_title">Service</a>
+              <ul>
+                <li><a href="#">Webサイト作成</a></li>
+                <li><a href="#">サイトリニューアル</a></li>
+                <li><a href="#">バナー・アイコンデザイン</a></li>
+                <li><a href="#">写真撮影・加工・編集</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="works.html" class="nav_title">Works</a>
+              <ul>
+                <li><a href="#">Webサイト製作実績</a></li>
+                <li><a href="#">バナー・アイコン作例</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="blog.html" class="nav_title">Blog</a>
+              <ul>
+                <li><a href="#">最新記事</a></li>
+                <li><a href="#">カテゴリー</a></li>
+                <li><a href="#">月間アーカイブ</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="plan.html" class="nav_title">Plan</a>
+              <ul>
+                <li><a href="#">お選びいただけるプラン</a></li>
+                <li><a href="#">プランの違い</a></li>
+                <li><a href="#">追加オプション</a></li>
+                <li><a href="#">保守サービス</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav_wrapper"><a href="about.html" class="nav_title">About</a>
+              <ul>
+                <li><a href="#">経営理念</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">アクセス</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- footer_nav_titleここまで -->
+        </nav>
+        <!-- footer_navここまで -->
+      </div>
+      <!-- footer_wrapperここまで -->
+
+  
+      <p class="copy">&copy 2021 K-CREATE</p>
+    </div>
+    <!-- /inner -->
+
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+
