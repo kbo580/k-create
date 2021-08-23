@@ -1291,11 +1291,16 @@ footer .footer_nav .nav_title_wrapper ul {
 .lead .lead_wrapper .lead_text_wrapper ul li {
   margin-bottom: 8px;
   color: #707070;
+  list-style: disc inside;
+  margin-bottom: 8px;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
 }
 
 .lead .lead_wrapper .lead_text_wrapper ul li:last-child {
   text-align: right;
   margin-bottom: 0;
+  list-style: none;
 }
 
 @media (min-width: 575px) {
@@ -2665,16 +2670,17 @@ footer .footer_nav .nav_title_wrapper ul {
 
 /* 保守サービスの表 */
 .table_wrapper {
-  overflow-x: scroll;
   width: 100%;
-}
-
-.table_wrapper .can_scroll {
-  font-weight: bold;
+  overflow-x: scroll;
 }
 
 .table_wrapper table {
   width: 500px;
+}
+
+.can_scroll {
+  font-weight: bold;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 600px) {
@@ -2711,11 +2717,11 @@ footer .footer_nav .nav_title_wrapper ul {
     margin-bottom: 32px;
   }
   /* 保守サービスの表 */
-  .table_wrapper .can_scroll {
-    display: none;
-  }
   .table_wrapper table {
     width: 100%;
+  }
+  .can_scroll {
+    display: none;
   }
 }
 
@@ -2966,7 +2972,7 @@ input[type="submit"] {
 }
 
 .about_company .about_company_image_wrapper .about_company_history_wrapper .company_history td {
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #A1B3D2;
   padding: 10px;
 }
 

@@ -1331,10 +1331,16 @@ footer{
         li{
           margin-bottom: 8px;
           color: $textColorB;
+          list-style: disc inside;
+          margin-bottom: 8px;
+          padding-left: 1.3em;
+          text-indent: -1.3em;
+
 
           &:last-child{
             text-align: right;
             margin-bottom: 0;
+            list-style: none;
           }
         }
       }
@@ -2803,16 +2809,17 @@ background-color: #ddd;
 
 /* 保守サービスの表 */
 .table_wrapper{
-  overflow-x:scroll;
   width: 100%;
+  overflow-x:scroll;
 
-  .can_scroll{
-    font-weight: bold;
-  }
   
   table{
     width: 500px;
   }
+}
+.can_scroll{
+  font-weight: bold;
+  font-size: rem(12);
 }
 
 @media (min-width: 600px) {
@@ -2853,13 +2860,14 @@ background-color: #ddd;
   /* 保守サービスの表 */
   .table_wrapper{
 
-    .can_scroll{
-      display: none;
-    }
-
+    
     table{
       width: 100%;
     }
+  }
+
+  .can_scroll{
+    display: none;
   }
 
 }
@@ -3126,7 +3134,7 @@ cursor: pointer;
         width: 100%;
 
         td{
-          border-bottom: 1px dotted #fff;
+          border-bottom: 1px dotted $tableSellColor;
           padding: 10px; 
 
           &:first-child{
@@ -3191,6 +3199,7 @@ cursor: pointer;
         .company_history{
           td{
             padding: 16px;
+            
           }
         }
       }
