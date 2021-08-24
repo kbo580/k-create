@@ -632,6 +632,7 @@ nav .nav_title_wrapper ul {
   top: 60px;
   left: 0;
   width: 100%;
+  padding-bottom: 60px;
   /* ナビの枠 */
 }
 
