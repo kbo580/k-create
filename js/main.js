@@ -36,15 +36,22 @@ $(function(){
 
   $('li').click(function(){
     var $answer = $(this).find('.modal_sub_menu');
+    
     if($answer.hasClass('open')){
       $answer.slideUp().removeClass('open');
       $(this).find('span').text('+');
-    
+      $(this).find('.modal_nav_title').css('background', 'rgba(8, 68, 170, .8)');
+      $(this).find('.modal_sub_menu').css('background', 'rgba(8, 68, 170, .8)');
+      
     }else{
       $answer.slideDown().addClass('open');
       $(this).find('span').text('−');
+      $(this).find('.modal_nav_title').css('background', '#4C86EA');
+
     }
   });
+
+
 
   //ヘッダーナビ
   $('#header-nav ul>.nav_wrapper').find('ul').hide();

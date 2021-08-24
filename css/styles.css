@@ -325,7 +325,7 @@ section {
   }
   /* セービスでの装飾文字 */
   .letter {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .letter:first-letter {
     font-size: 6.75rem;
@@ -340,6 +340,8 @@ header {
   position: relative;
   padding: 8px 0;
   height: 60px;
+  background-color: #0844AA;
+  width: 100%;
   /* ヘッダーロゴ */
 }
 
@@ -485,6 +487,7 @@ header .header_logo {
   header {
     height: 80px;
     padding: 16px 0;
+    background: transparent;
     /* ヘッダーロゴ */
   }
   header .header_logo {
@@ -624,7 +627,6 @@ nav .nav_title_wrapper ul {
 }
 
 .modal_nav {
-  border: 2px solid #fff;
   position: absolute;
   top: 60px;
   left: 0;
@@ -632,8 +634,12 @@ nav .nav_title_wrapper ul {
   text-align: center;
 }
 
+.modal_nav .modal_nav_list {
+  border: 2px solid #fff;
+}
+
 .modal_nav .modal_nav_wrapper .modal_nav_title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: block;
   padding: 8px;
   position: relative;
@@ -665,6 +671,22 @@ nav .nav_title_wrapper ul {
 
 .modal_nav .modal_nav_wrapper:hover .sub-menu {
   display: block;
+}
+
+.modal_nav .modal_sns_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_nav .modal_sns_wrapper .sns_card {
+  height: 50px;
+  display: block;
+}
+
+.modal_nav .modal_sns_wrapper .sns_card i {
+  line-height: 50px;
+  font-size: 24px;
 }
 
 @media (min-width: 575px) {
@@ -717,6 +739,7 @@ nav .nav_title_wrapper ul {
 .contact .contact_wrapper .comment {
   font-size: calc(1.3125rem + ((1vw - 3.75px) * 0.7735));
   margin-bottom: 32px;
+  text-align: justify;
 }
 
 /* contactページのボタン周り */
@@ -728,7 +751,7 @@ nav .nav_title_wrapper ul {
   /* ボタン */
 }
 
-.contact_btn_wrapper .contact_btn_contact {
+.contact_btn_wrapper .contact_btn_contact:first-child {
   margin-bottom: 16px;
 }
 
@@ -821,8 +844,8 @@ nav .nav_title_wrapper ul {
             justify-content: space-between;
     /* contactのボタン */
   }
-  .contact_btn_wrapper .contact_btn_contact {
-    margin-bottom: 48px;
+  .contact_btn_wrapper .contact_btn_contact:first-child {
+    margin-bottom: 0px;
   }
   .contact_btn_wrapper p {
     margin-bottom: 16px;
@@ -980,11 +1003,6 @@ footer .footer_nav .nav_title_wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-footer .footer_nav .nav_title_wrapper .nav_title {
-  padding-bottom: 4px;
-  border-bottom: 1px solid #FFA400;
 }
 
 footer .footer_nav .nav_title_wrapper ul {
@@ -1555,7 +1573,7 @@ footer .footer_nav .nav_title_wrapper ul {
             flex-direction: row-reverse;
   }
   .service_wrapper .letter {
-    display: block;
+    display: inline-block;
   }
 }
 

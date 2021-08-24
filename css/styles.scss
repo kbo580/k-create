@@ -341,7 +341,6 @@ section{
 
   .bread{
     position: absolute;
-    // width: 100%;
     top: 8px;
     font-size: calc(0.75rem + ((1vw - 3.75px) * 0.221));
   }
@@ -372,7 +371,7 @@ section{
 
   /* セービスでの装飾文字 */
   .letter{
-    font-size: rem(48);
+    font-size: rem(40);
 
     &:first-letter{
       font-size: rem(108);
@@ -389,6 +388,8 @@ header{
   position: relative;
   padding: 8px 0;
   height: 60px;
+  background-color: $mainColor;
+  width: 100%;
 
   .inner{
     display: flex;
@@ -510,6 +511,7 @@ header{
   header{
     height: 80px;
     padding: 16px 0;
+    background: transparent;
   
     /* ヘッダーロゴ */
     .header_logo{
@@ -640,6 +642,7 @@ nav{
   position: fixed;
   transition: all .4s;
   right: -120%; 
+  // left: 0;
   top: 0;
   z-index: 4;
   overflow-y: scroll;
@@ -651,17 +654,20 @@ nav{
 }
 
 .modal_nav{
-  border: 2px solid #fff;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
   text-align: center;
 
+  .modal_nav_list{
+    border: 2px solid #fff;
+  }
+
 
   .modal_nav_wrapper{
     .modal_nav_title{
-      font-size: rem(24);
+      font-size: rem(20);
       display: block;
       padding: 8px;
       position: relative;
@@ -678,15 +684,14 @@ nav{
 
     .modal_sub_menu{
       display: none;
+
       li{
         a{
-          // transition: all .4s;
           display: block;
           padding: 12px;
           font-size: rem(16);
 
           &:hover{
-            // background: $accentColor;
             display: block;
           }
         }
@@ -697,6 +702,20 @@ nav{
       display: block;
     }
   }
+
+  .modal_sns_wrapper{
+    display: flex;
+
+    .sns_card{
+      height: 50px;
+      display: block;
+      i{
+        line-height: 50px;
+        font-size: 24px;
+      }
+    }
+  }
+
 }
 
 @media (min-width:575px) {
@@ -745,6 +764,7 @@ nav{
     .comment{
       font-size: calc(1.3125rem + ((1vw - 3.75px) * 0.7735));
       margin-bottom: 32px;
+      text-align: justify;
     }
   }
 }
@@ -754,7 +774,7 @@ nav{
   text-align: center;
   @include heading;
 
-  .contact_btn_contact{
+  .contact_btn_contact:first-child{
     margin-bottom: 16px;
   }
 
@@ -849,8 +869,8 @@ nav{
     display: flex;
     justify-content: space-between;
 
-    .contact_btn_contact{
-      margin-bottom: 48px;
+    .contact_btn_contact:first-child{
+      margin-bottom: 0px;
     }
 
     p{
@@ -1002,11 +1022,6 @@ footer{
     .nav_title_wrapper{
       display: flex;
       justify-content: space-between;
-
-      .nav_title{
-        padding-bottom: 4px;
-        border-bottom: 1px solid $accentColor;
-      }
 
       ul{
         display: none;
@@ -1611,7 +1626,7 @@ footer{
 
     /* 装飾文字 */
     .letter{
-      display: block;
+      display: inline-block;
     }
   }
   
