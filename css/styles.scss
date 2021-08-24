@@ -653,90 +653,110 @@ nav{
   right: 0; 
 }
 
+/* ナビ全体 */
 .modal_nav{
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
-  text-align: center;
 
   .modal_nav_list{
-    border: 2px solid #fff;
+    margin-bottom: 24px;
+    width: 80%;
+    margin: 0 auto;
   }
 
-
+  /* ナビの枠 */
   .modal_nav_wrapper{
+
+    /* ナビタイトル */
     .modal_nav_title{
       font-size: rem(20);
-      display: block;
-      padding: 8px;
-      position: relative;
-      border-bottom: 1px solid #fff;
-      border-top: 1px solid #fff;
-      
-      span{
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translate(-50%,-50%);
-      }
+      display: inline-block;
+      padding: 0.8em 0.5em 0.2em;
+      border-bottom: 2px solid $accentColor;
     }
 
-    .modal_sub_menu{
-      display: none;
+    /* ナビリスト */
+    .modal_sub_menu li{
+      padding: 0.8em 2em;
+      display: block;
 
-      li{
+      a{
+        font-size: rem(16);
+      }
+    }
+  }
+}
+
+/* sns */
+.modal_sns_wrapper{
+  display: flex;
+
+  .sns_card{
+    height: 50px;
+    display: block;
+    text-align: center;
+    
+    i{
+      line-height: 50px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width:575px) {
+  /* ナビ全体 */
+  .modal_nav{
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .modal_nav_list{
+      margin-bottom: 40px;
+      // width: 80%;
+      // margin: 0 auto;
+    }
+
+    /* ナビの枠 */
+    .modal_nav_wrapper{
+
+      /* ナビタイトル */
+      .modal_nav_title{
+        font-size: rem(24);
+        cursor: pointer;
+      }
+
+      /* ナビリスト */
+      .modal_sub_menu li{
+        
         a{
-          display: block;
-          padding: 12px;
-          font-size: rem(16);
+          font-size: rem(20);
+          transition: all .4s;
+          display: inline-block;
 
           &:hover{
-            display: block;
+            opacity: .6;
           }
         }
       }
     }
 
-    &:hover .sub-menu{
-      display: block;
-    }
-  }
+    /* sns */
+    .modal_sns_wrapper{
+  
+      .sns_card{
+        height: 70px;
 
-  .modal_sns_wrapper{
-    display: flex;
-
-    .sns_card{
-      height: 50px;
-      display: block;
-      i{
-        line-height: 50px;
-        font-size: 24px;
-      }
-    }
-  }
-
-}
-
-@media (min-width:575px) {
-  .modal_nav{
-    top: 80px;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    .modal_nav_wrapper{
-      .modal_sub_menu li a{
-        transition: all .4s;
-
-        &:hover{
-          background: $accentColor;
-          display: block;
+        i{
+          line-height: 70px;
+          font-size: 40px;
         }
       }
     }
   }
 }
+
 
 @media (min-width:1025px) {
   .header_nav{
@@ -2627,6 +2647,7 @@ footer{
   }
   
 }
+
 /* -------------------------------------------- */
 /* plan */
 /* -------------------------------------------- */
