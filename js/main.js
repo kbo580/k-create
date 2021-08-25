@@ -36,7 +36,7 @@ $(function(){
 
 
 
-  //ヘッダーナビ
+  //ヘッダーナビメニューのドロップ
   $('#header-nav ul>.nav_wrapper').find('ul').hide();
   $('#header-nav .nav_title_wrapper>.nav_wrapper').hover(function(){
       $('.sub_menu:not(:animated)', this).slideDown(300);
@@ -45,35 +45,37 @@ $(function(){
       $('.sub_menu',this).slideUp();
   });
 
+
+  //Planページのタブの切り替え用
   //任意のタブにURLからリンクするための設定
-function GethashID (hashIDName){
-	if(hashIDName){
-		//タブ設定
-		$('.tab li').find('a').each(function() { 
-			var idName = $(this).attr('href');
-			if(idName == hashIDName){ 
-				var parentElm = $(this).parent(); 
-				$('.tab li').removeClass("active"); 
-				$(parentElm).addClass("active");
-				$(".area").removeClass("is-active");
-				$(hashIDName).addClass("is-active");
-			}
-		});
-	}
-}
+  function GethashID (hashIDName){
+    if(hashIDName){
+      //タブ設定
+      $('.tab li').find('a').each(function() { 
+        var idName = $(this).attr('href');
+        if(idName == hashIDName){ 
+          var parentElm = $(this).parent(); 
+          $('.tab li').removeClass("active"); 
+          $(parentElm).addClass("active");
+          $(".area").removeClass("is-active");
+          $(hashIDName).addClass("is-active");
+        }
+      });
+    }
+  }
 
-$('.tab a').on('click', function() {
-	var idName = $(this).attr('href');
-	GethashID (idName);
-	return false;
-});
+  $('.tab a').on('click', function() {
+    var idName = $(this).attr('href');
+    GethashID (idName);
+    return false;
+  });
 
-$(window).on('load', function () {
-    $('.tab li:first-of-type').addClass("active");
-    $('.area:first-of-type').addClass("is-active");
-	var hashName = location.hash; 
-	GethashID (hashName);
-});
+  $(window).on('load', function () {
+      $('.tab li:first-of-type').addClass("active");
+      $('.area:first-of-type').addClass("is-active");
+    var hashName = location.hash; 
+    GethashID (hashName);
+  });
 
 
   ////////topへ戻るボタン関連////////

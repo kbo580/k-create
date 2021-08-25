@@ -615,10 +615,10 @@ nav .nav_title_wrapper ul {
   position: fixed;
   -webkit-transition: all .4s;
   transition: all .4s;
-  right: -120%;
+  left: 0;
   top: 0;
   z-index: 4;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 /* モーダルメニューにactiveクラスが着いた時*/
@@ -632,12 +632,12 @@ nav .nav_title_wrapper ul {
   top: 60px;
   left: 0;
   width: 100%;
+  /* ナビの枠 */
 }
 
 .modal_nav .modal_nav_list {
   width: 80%;
   margin: 0 auto 24px;
-  /* ナビの枠 */
 }
 
 .modal_nav .modal_nav_list .modal_nav_wrapper {
@@ -687,11 +687,11 @@ nav .nav_title_wrapper ul {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    /* ナビの枠 */
     /* sns */
   }
   .modal_nav .modal_nav_list {
     margin-bottom: 40px;
-    /* ナビの枠 */
   }
   .modal_nav .modal_nav_list .modal_nav_wrapper {
     /* ナビタイトル */
@@ -1015,12 +1015,20 @@ footer .footer_nav .nav_title_wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* ナビタイトル */
+  /* ナビメニュー */
+}
+
+footer .footer_nav .nav_title_wrapper .nav_title {
+  border-bottom: 2px solid #FFA400;
+  padding-bottom: 4px;
 }
 
 footer .footer_nav .nav_title_wrapper ul {
   display: none;
 }
 
+/* Topへ戻るボタン */
 .to_top {
   width: 50px;
   height: 50px;
@@ -1062,6 +1070,11 @@ footer .footer_nav .nav_title_wrapper ul {
   footer .footer_wrapper {
     padding: 60px 0;
   }
+  footer .footer_nav .nav_title_wrapper {
+    /* ナビタイトル */
+    /* ナビメニュー */
+    /* リンク */
+  }
   footer .footer_nav .nav_title_wrapper .nav_title {
     margin-bottom: 16px;
   }
@@ -1072,13 +1085,14 @@ footer .footer_nav .nav_title_wrapper ul {
   footer .footer_nav .nav_title_wrapper ul li {
     margin-bottom: 8px;
   }
-  footer .footer_nav a {
+  footer .footer_nav .nav_title_wrapper a {
     -webkit-transition: all .4s;
     transition: all .4s;
   }
-  footer .footer_nav a:hover {
+  footer .footer_nav .nav_title_wrapper a:hover {
     opacity: .6;
   }
+  /* Topへ戻るボタン */
   .to_top {
     width: 60px;
     height: 60px;
@@ -1106,6 +1120,10 @@ footer .footer_nav .nav_title_wrapper ul {
     padding: 80px 0;
     /* ロゴと住所など */
   }
+  footer .footer_wrapper .footer_info_wrapper {
+    /* フッターロゴ */
+    /* 住所 */
+  }
   footer .footer_wrapper .footer_info_wrapper .footer_logo {
     width: 250px;
     margin-bottom: 24px;
@@ -1123,9 +1141,6 @@ footer .footer_nav .nav_title_wrapper ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  footer .footer_nav .nav_title_wrapper .nav_title {
-    margin-bottom: 16px;
   }
   footer .footer_nav .nav_title_wrapper .nav_wrapper:not(:last-child) {
     margin-right: 32px;
