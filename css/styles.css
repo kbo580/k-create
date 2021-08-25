@@ -615,7 +615,7 @@ nav .nav_title_wrapper ul {
   position: fixed;
   -webkit-transition: all .4s;
   transition: all .4s;
-  left: 0;
+  right: -120%;
   top: 0;
   z-index: 4;
   overflow: auto;
