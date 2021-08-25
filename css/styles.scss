@@ -659,6 +659,7 @@ nav{
   top: 60px;
   left: 0;
   width: 100%;
+  padding-bottom: 100px;
 
   /* ナビの枠 */
   .modal_nav_list{
@@ -693,7 +694,7 @@ nav{
 /* sns */
 .modal_sns_wrapper{
   display: flex;
-  padding-bottom: 60px;
+  // padding-bottom: 160px;
 
   .sns_card{
     height: 50px;
