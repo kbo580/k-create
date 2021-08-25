@@ -641,8 +641,8 @@ nav{
   height: 100vh;
   position: fixed;
   transition: all .4s;
-  // right: -120%; 
-  left: 0;
+  right: -120%; 
+  // left: 0;
   top: 0;
   z-index: 4;
   overflow-y: scroll;
@@ -664,29 +664,30 @@ nav{
   .modal_nav_list{
     width: 80%;
     margin: 0 auto 24px;
-  }
 
-  /* ナビの枠 */
-  .modal_nav_wrapper{
-
-    /* ナビタイトル */
-    .modal_nav_title{
-      font-size: rem(20);
-      display: inline-block;
-      padding: 0.8em 0.5em 0.2em;
-      border-bottom: 2px solid $accentColor;
-    }
-
-    /* ナビリスト */
-    .modal_sub_menu li{
-      padding: 0.8em 2em;
-      display: block;
-
-      a{
-        font-size: rem(16);
+    /* ナビの枠 */
+    .modal_nav_wrapper{
+  
+      /* ナビタイトル */
+      .modal_nav_title{
+        font-size: rem(20);
+        display: inline-block;
+        padding: 0.8em 0.5em 0.2em;
+        border-bottom: 2px solid $accentColor;
+      }
+  
+      /* ナビリスト */
+      .modal_sub_menu li{
+        padding: 0.8em 2em;
+        display: block;
+  
+        a{
+          font-size: rem(16);
+        }
       }
     }
   }
+
 }
 
 /* sns */
@@ -716,31 +717,32 @@ nav{
       margin-bottom: 40px;
       // width: 80%;
       // margin: 0 auto;
-    }
 
-    /* ナビの枠 */
-    .modal_nav_wrapper{
-
-      /* ナビタイトル */
-      .modal_nav_title{
-        font-size: rem(24);
-        cursor: pointer;
-      }
-
-      /* ナビリスト */
-      .modal_sub_menu li{
-        
-        a{
-          font-size: rem(20);
-          transition: all .4s;
-          display: inline-block;
-
-          &:hover{
-            opacity: .6;
+      /* ナビの枠 */
+      .modal_nav_wrapper{
+  
+        /* ナビタイトル */
+        .modal_nav_title{
+          font-size: rem(24);
+          cursor: pointer;
+        }
+  
+        /* ナビリスト */
+        .modal_sub_menu li{
+          
+          a{
+            font-size: rem(20);
+            transition: all .4s;
+            display: inline-block;
+  
+            &:hover{
+              opacity: .6;
+            }
           }
         }
       }
     }
+
 
     /* sns */
     .modal_sns_wrapper{
