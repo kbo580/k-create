@@ -34,23 +34,6 @@ $(function(){
     }
   });
 
-  $('li').click(function(){
-    var $answer = $(this).find('.modal_sub_menu');
-    
-    if($answer.hasClass('open')){
-      $answer.slideUp().removeClass('open');
-      $(this).find('span').text('+');
-      $(this).find('.modal_nav_title').css('background', 'rgba(8, 68, 170, .8)');
-      $(this).find('.modal_sub_menu').css('background', 'rgba(8, 68, 170, .8)');
-      
-    }else{
-      $answer.slideDown().addClass('open');
-      $(this).find('span').text('−');
-      $(this).find('.modal_nav_title').css('background', '#4C86EA');
-
-    }
-  });
-
 
 
   //ヘッダーナビ
@@ -92,22 +75,24 @@ $(window).on('load', function () {
 	GethashID (hashName);
 });
 
-//画面をスクロールしたら
-$(window).scroll(function(){
-if($(this).scrollTop()>600){
-  $('#to_top').fadeIn(400);
-  return false;
-}else{
-  $('#to_top').fadeOut(400);
-  return false;
-}
-});
 
-//「topへ戻る」ボタンを押すとtopから0の地点へスクロールする
-$('#to_top').click(function(){ 
-  $('html,body').animate({'scrollTop':0},500);
-  return false;
-});
+  ////////topへ戻るボタン関連////////
+  //画面をスクロールしたら
+  $(window).scroll(function(){
+  if($(this).scrollTop()>600){
+    $('#to_top').fadeIn(400);
+    return false;
+  }else{
+    $('#to_top').fadeOut(400);
+    return false;
+  }
+  });
+
+  //「topへ戻る」ボタンを押すとtopから0の地点へスクロールする
+  $('#to_top').click(function(){ 
+    $('html,body').animate({'scrollTop':0},500);
+    return false;
+  });
 
 
 
