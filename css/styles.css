@@ -615,7 +615,7 @@ nav .nav_title_wrapper ul {
   position: fixed;
   -webkit-transition: all .4s;
   transition: all .4s;
-  right: -120%;
+  left: 0;
   top: 0;
   z-index: 4;
   overflow-y: scroll;
@@ -632,14 +632,13 @@ nav .nav_title_wrapper ul {
   top: 60px;
   left: 0;
   width: 100%;
-  padding-bottom: 60px;
+  border: 3px solid #fc2;
   /* ナビの枠 */
 }
 
 .modal_nav .modal_nav_list {
-  margin-bottom: 24px;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 }
 
 .modal_nav .modal_nav_wrapper {
