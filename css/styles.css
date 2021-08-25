@@ -632,7 +632,6 @@ nav .nav_title_wrapper ul {
   top: 60px;
   left: 0;
   width: 100%;
-  border: 3px solid #fc2;
 }
 
 .modal_nav .modal_nav_list {
@@ -649,12 +648,13 @@ nav .nav_title_wrapper ul {
 .modal_nav .modal_nav_list .modal_nav_wrapper .modal_nav_title {
   font-size: 1.25rem;
   display: inline-block;
-  padding: 0.8em 0.5em 0.2em;
+  padding: 0.4em 0.5em 0.2em;
   border-bottom: 2px solid #FFA400;
+  margin-bottom: 0.2em;
 }
 
 .modal_nav .modal_nav_list .modal_nav_wrapper .modal_sub_menu li {
-  padding: 0.8em 2em;
+  padding: 0.4em 2em;
   display: block;
 }
 

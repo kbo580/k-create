@@ -659,7 +659,7 @@ nav{
   top: 60px;
   left: 0;
   width: 100%;
-  border: 3px solid #fc2;
+  // border: 3px solid #fc2;
 
   .modal_nav_list{
     width: 80%;
@@ -672,14 +672,16 @@ nav{
       .modal_nav_title{
         font-size: rem(20);
         display: inline-block;
-        padding: 0.8em 0.5em 0.2em;
+        padding: 0.4em 0.5em 0.2em;
         border-bottom: 2px solid $accentColor;
+        margin-bottom: 0.2em;
       }
   
       /* ナビリスト */
       .modal_sub_menu li{
-        padding: 0.8em 2em;
+        padding: 0.4em 2em;
         display: block;
+        // border: 1px solid #fff;
   
         a{
           font-size: rem(16);
