@@ -667,6 +667,7 @@ nav .nav_title_wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 60px;
 }
 
 .modal_sns_wrapper .sns_card {
