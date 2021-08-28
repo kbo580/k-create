@@ -97,6 +97,18 @@ $(function(){
   });
 
 
+  $('#pcToggle').click(function(){ 
+    $('.pc_image').slideToggle(400);
+    return false;
+  });
+
+  $('#spToggle').click(function(){ 
+    $('.sp_image').slideToggle(400);
+    return false;
+  });
+
+  
+
 
 
   
